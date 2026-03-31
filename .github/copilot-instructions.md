@@ -38,3 +38,31 @@
 
 Reference key files: `server/pom.xml`, `client/mediconnect-react/package.json`, `server/src/main/resources/application.properties`</content>
 <parameter name="filePath">c:\Users\2480003\Documents\mediconnect\.github\copilot-instructions.md
+
+
+
+
+
+## Here's what happens when you run Seed.main():
+
+
+## === MediConnect Database Seeder ===
+
+Select tables to seed (comma-separated numbers), or type 'all':
+
+   1. hospitals
+   2. departments        [requires: hospitals]
+   3. users              [requires: hospitals]
+   4. doctors            [requires: hospitals, departments, users]
+   5. patients           [requires: hospitals, users]
+   6. beds               [requires: hospitals, patients]
+   7. appointments       [requires: hospitals, doctors, patients]
+   8. medical_records    [requires: hospitals, doctors, patients]
+   9. lab_reports        [requires: hospitals, doctors, patients]
+  10. notifications      [requires: hospitals, users]
+  11. inventory          [requires: hospitals]
+
+Enter selection: 7
+
+Auto-including dependencies: hospitals, departments, users, doctors, patients
+Will seed: hospitals, departments, users, doctors, patients, appointments
